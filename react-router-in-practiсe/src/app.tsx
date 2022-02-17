@@ -4,6 +4,7 @@ import Layout from './components/layout';
 import Main from './pages/main';
 import About from './pages/about';
 import Secret from './pages/secret';
+import Invoices from './routes/invoices';
 
 /*
   Решается проблема с помощью индексного элемента.
@@ -26,6 +27,7 @@ function App (): JSX.Element {
             <Route path='secret' element={<Secret />} />
           </Route>
         </Route>
+        <Route path="invoices" element={<Invoices />} />
         <Route path="*" element={
           <Fragment>
             <h1>
